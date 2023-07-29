@@ -63,6 +63,6 @@ Material:
     - _Smoothness: 0.901
     - _Strength: 0.22
     m_Colors:
-    - _DeepWaterColor: {r: 0.10476937, g: 0.0858668, b: 0.6320754, a: 0.8235294}
-    - _ShallowWaterColor: {r: 0.19245276, g: 0.7307443, b: 1, a: 0.7450981}
+    - _DeepWaterColor: {r: 0, g: 0.894794, b: 1, a: 0.8235294}
+    - _ShallowWaterColor: {r: 0.12046986, g: 0.8810531, b: 0.8867924, a: 0.7450981}
   m_BuildTextureStacks: []
