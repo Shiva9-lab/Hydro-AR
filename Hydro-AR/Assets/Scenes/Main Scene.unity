@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5638,14 +5638,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746621351}
-  m_LocalRotation: {x: -0, y: -0.6289753, z: -0, w: 0.77742535}
-  m_LocalPosition: {x: 1943, y: -488, z: -371}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.57848173, y: -0.81170475, z: 0.04677071, w: 0.065627}
+  m_LocalPosition: {x: 525, y: 507, z: 59}
+  m_LocalScale: {x: 3.2409942, y: 1, z: 0.91868865}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369992454}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -77.949, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -170.755, z: 70.953}
 --- !u!199 &746621353
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5667,7 +5667,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a1143ee683302f4aa628c052723efc1, type: 2}
+  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5734,8 +5734,8 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 0
-  playOnAwake: 1
+  prewarm: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5855,7 +5855,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 22
-      minScalar: 55
+      minScalar: 45.4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5908,7 +5908,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.17611244, g: 0.9178946, b: 0.9622642, a: 0.7176471}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6286,7 +6286,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 5000
+    maxNumParticles: 10000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -6346,7 +6346,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 8
     angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -6354,7 +6354,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 2, y: 2, z: 2}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -6433,7 +6433,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 3
+      value: 0.0001
       mode: 0
       spread: 0
       speed:
@@ -6552,7 +6552,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 500
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -16209,7 +16209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617999155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 568, y: 15, z: 706}
+  m_LocalPosition: {x: 568, y: 29, z: 706}
   m_LocalScale: {x: 15.531482, y: 24.30108, z: 16.92655}
   m_ConstrainProportionsScale: 0
   m_Children: []
