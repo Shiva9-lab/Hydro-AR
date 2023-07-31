@@ -8,24 +8,27 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M Conifer Leaves BODT
-  m_Shader: {fileID: 4800000, guid: 0f4122b9a743b744abe2fb6a0a88868b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
   m_ValidKeywords:
-  - GEOM_TYPE_LEAF
-  m_InvalidKeywords:
-  - _ALPHAPREMULTIPLY_ON
-  - _EMISSION
-  - _METALLICGLOSSMAP
-  - _NORMALMAP
-  - _SPECULARHIGHLIGHTS_OFF
+  - _ALPHATEST_ON
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
+  - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 5597dc21a8aed4e7ba2c0f93dc4b1d98, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -68,8 +71,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 5597dc21a8aed4e7ba2c0f93dc4b1d98, type: 3}
-        m_Scale: {x: 100, y: 3.23}
-        m_Offset: {x: 1.74, y: 1.58}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTexArray:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -90,20 +93,38 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
         m_Texture: {fileID: 2800000, guid: ca6a46a4d37514e00ae826202bad794e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 1
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _BackFaceSmoothness: 1
+    - _Blend: 0
     - _BranchWind: 0
     - _BumpScale: 1
     - _ColorContrast: 1
     - _ColorMultiplier: 1
-    - _Cull: 2
+    - _Cull: 0
     - _Culling: 0
     - _Cutoff: 0.5
     - _DebugBending: 0
@@ -119,6 +140,7 @@ Material:
     - _FadeOutWind: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
+    - _GlossinessSource: 0
     - _GlossyReflections: 1
     - _IsBark: 0
     - _LODTerrain: 1
@@ -130,10 +152,17 @@ Material:
     - _NormalLerp: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _ShadowCulling: 0
+    - _Shininess: 0
+    - _Smoothness: 0.5
+    - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
+    - _SpecSource: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
+    - _Surface: 1
     - _SwapUVS: 0
     - _Tangents: 0
     - _TimeOffset: 0.25
@@ -149,10 +178,12 @@ Material:
     m_Colors:
     - _AdvancedEdgeBending: {r: 0.6, g: 1.3, b: 0, a: 0}
     - _AverageCol: {r: 1, g: 1, b: 1, a: 0.5}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseWindMultipliers: {r: 0.6, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 0, g: 0.9, b: 0.8255172, a: 0.1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &7874607385446969715
 MonoBehaviour:
