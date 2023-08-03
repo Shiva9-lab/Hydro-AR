@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6636,15 +6636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c5a48421b9b94cd0bc89db4379a3dae0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3558929
+      value: 0.42824593
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c5a48421b9b94cd0bc89db4379a3dae0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3558929
+      value: 0.42824593
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c5a48421b9b94cd0bc89db4379a3dae0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3558929
+      value: 0.42824593
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c5a48421b9b94cd0bc89db4379a3dae0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20095,15 +20095,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1696544635019272631, guid: 6b04fa51c020bcd43bd91a8f99540dd4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1696544635019272631, guid: 6b04fa51c020bcd43bd91a8f99540dd4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1696544635019272631, guid: 6b04fa51c020bcd43bd91a8f99540dd4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1696544635019272631, guid: 6b04fa51c020bcd43bd91a8f99540dd4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20130,6 +20130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055742743}
     m_Modifications:
+    - target: {fileID: 5267975174185703289, guid: 4119d1b767dcab64791abfaed215b381, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 91.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5267975174185703289, guid: 4119d1b767dcab64791abfaed215b381, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
       value: 0.023529412
