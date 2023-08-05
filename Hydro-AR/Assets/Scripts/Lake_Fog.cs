@@ -5,13 +5,21 @@ using UnityEngine;
 public class Lake_Fog : MonoBehaviour
 {
     private Animator animator;
+    [SerializeField]
+    private ParticleSystem particle;
+   
     int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         animator = GetComponent<Animator>();
+        particle = GetComponent<ParticleSystem>();
+        
+
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -39,6 +47,13 @@ public class Lake_Fog : MonoBehaviour
                     animator.SetTrigger("Cloud 1_Movement");
                     animator.SetTrigger("Cloud 2_Movement");
                     animator.SetTrigger("Cloud 3_Movement");
+                }
+
+                if(count == 4)
+                {
+                    var emission = particle.emission;
+                    emission.enabled = true;
+                    particle.Play();
                 }
             }
         }
