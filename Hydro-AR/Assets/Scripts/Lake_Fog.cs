@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Lake_Fog : MonoBehaviour
 {
+  
     private Animator animator;
     [SerializeField]
     private ParticleSystem particle;
@@ -16,8 +17,8 @@ public class Lake_Fog : MonoBehaviour
         
         animator = GetComponent<Animator>();
         particle = GetComponent<ParticleSystem>();
-        
-
+        //particle.SetActive(false);
+        particle.Play();
     }
     
 
@@ -51,9 +52,11 @@ public class Lake_Fog : MonoBehaviour
 
                 if(count == 4)
                 {
-                    var emission = particle.emission;
-                    emission.enabled = true;
-                    particle.Play();
+                    //var emission = particle.emission;
+                    //emission.enabled = true;
+                    //particle.SetActive(true);
+                   
+
                 }
             }
         }
