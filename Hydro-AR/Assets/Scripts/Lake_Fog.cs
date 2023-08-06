@@ -5,60 +5,67 @@ using UnityEngine;
 public class Lake_Fog : MonoBehaviour
 {
   
-    private Animator animator;
-    [SerializeField]
-    private ParticleSystem particle;
-   
+    public Animator animator_LF;
+    public Animator animator_OF;
+    public Animator animator_C1;
+    public Animator animator_C2;
+    public Animator animator_C3;
+    public ParticleSystem particle;
+    
     int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         
-        animator = GetComponent<Animator>();
-        particle = GetComponent<ParticleSystem>();
+        animator_LF = GetComponent<Animator>();
+        animator_OF = GetComponent<Animator>();
+        animator_C1 = GetComponent<Animator>();
+        animator_C2 = GetComponent<Animator>();
+        animator_C3 = GetComponent<Animator>();
+        particle = GetComponentInChildren<ParticleSystem>();
         //particle.SetActive(false);
-        particle.Play();
+        
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        if(animator != null)
-        {
-            if(Input.GetKeyDown(KeyCode.Q))
+         
+        
+            //animator.Play("Base Layer.Arrow_Sun");
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 count++;
                 if (count == 1)
                 {
-                    animator.SetTrigger("Tap_lake_Fog");
-                    animator.SetTrigger("Tap_Ocean_Fog");
+                    animator_LF.SetTrigger("Tap_lake_Fog");
+                    animator_OF.SetTrigger("Tap_Ocean_Fog");
+                    
                 }
 
                 if(count == 2)
                 {
-                    animator.SetTrigger("Cloud 1_Formation");
-                    animator.SetTrigger("Cloud 2_Formation");
-                    animator.SetTrigger("Cloud 3_Formation");
+                    animator_C1.SetTrigger("Cloud 1_Formation");
+                    animator_C2.SetTrigger("Cloud 2_Formation");
+                    animator_C3.SetTrigger("Cloud 3_Formation");
                 }
 
                 if(count == 3)
                 {
-                    animator.SetTrigger("Cloud 1_Movement");
-                    animator.SetTrigger("Cloud 2_Movement");
-                    animator.SetTrigger("Cloud 3_Movement");
+                    animator_C1.SetTrigger("Cloud 1_Movement");
+                    animator_C2.SetTrigger("Cloud 2_Movement");
+                    animator_C3.SetTrigger("Cloud 3_Movement");
                 }
 
                 if(count == 4)
                 {
-                    //var emission = particle.emission;
-                    //emission.enabled = true;
-                    //particle.SetActive(true);
-                   
+                    
+                    particle.Play();
+
 
                 }
             }
-        }
     }
 }
