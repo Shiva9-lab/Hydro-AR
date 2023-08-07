@@ -10,37 +10,49 @@ public class Lake_Fog : MonoBehaviour
     public Animator animator_C1;
     public Animator animator_C2;
     public Animator animator_C3;
+    public Animator animator_AS;
+    public Animator animator_AE;
+    public Animator animator_AC;
     public ParticleSystem particle;
+
+    public Animation anim;
     
     int count = 0;
+    bool arrow = true;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animation>();
         
-        animator_LF = GetComponent<Animator>();
-        animator_OF = GetComponent<Animator>();
-        animator_C1 = GetComponent<Animator>();
-        animator_C2 = GetComponent<Animator>();
-        animator_C3 = GetComponent<Animator>();
-        particle = GetComponentInChildren<ParticleSystem>();
-        //particle.SetActive(false);
         
     }
     
-
     // Update is called once per frame
     void Update()
     {
-         
-        
-            //animator.Play("Base Layer.Arrow_Sun");
-            if (Input.GetKeyDown(KeyCode.Q))
+        animator_AS.SetTrigger("Arrow_Sun");
+        animator_AE.SetTrigger("Arrow_Evaporation");
+
+        //while (arrow)
+        //{
+        //    animator_AS.SetTrigger("Arrow_Sun");
+        //    if (animator_AS.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator_AS.IsInTransition(0))
+        //    {
+        //        animator_AE.SetTrigger("Arrow_Evaporation");
+        //        //arrow = false;
+        //    }
+        //    arrow = false;
+
+        //}
+
+
+        if (Input.GetKeyDown(KeyCode.Q))
             {
                 count++;
                 if (count == 1)
                 {
-                    animator_LF.SetTrigger("Tap_lake_Fog");
+                    animator_LF.SetTrigger("Tap_Lake_Fog");
                     animator_OF.SetTrigger("Tap_Ocean_Fog");
                     
                 }
