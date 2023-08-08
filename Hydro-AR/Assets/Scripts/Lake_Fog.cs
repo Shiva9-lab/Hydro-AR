@@ -10,9 +10,9 @@ public class Lake_Fog : MonoBehaviour
     public Animator animator_C1;
     public Animator animator_C2;
     public Animator animator_C3;
-    public Animator animator_AS;
-    public Animator animator_AE;
-    public Animator animator_AC;
+    //public Animator animator_AS;
+    //public Animator animator_AE;
+    //public Animator animator_AC;
     public ParticleSystem R1, R2, R3;
 
     
@@ -31,6 +31,7 @@ public class Lake_Fog : MonoBehaviour
     void Update()
     {
         //animator_AS.SetTrigger("Arrow_Sun");
+
         //animator_AE.SetTrigger("Arrow_Evaporation");
 
         //while (arrow)
