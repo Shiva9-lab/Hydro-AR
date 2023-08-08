@@ -13,9 +13,9 @@ public class Lake_Fog : MonoBehaviour
     public Animator animator_AS;
     public Animator animator_AE;
     public Animator animator_AC;
-    public ParticleSystem particle;
+    public ParticleSystem R1, R2, R3;
 
-    public Animation anim;
+    
     
     int count = 0;
     bool arrow = true;
@@ -23,16 +23,15 @@ public class Lake_Fog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animation>();
-        
+       
         
     }
     
     // Update is called once per frame
     void Update()
     {
-        animator_AS.SetTrigger("Arrow_Sun");
-        animator_AE.SetTrigger("Arrow_Evaporation");
+        //animator_AS.SetTrigger("Arrow_Sun");
+        //animator_AE.SetTrigger("Arrow_Evaporation");
 
         //while (arrow)
         //{
@@ -73,9 +72,10 @@ public class Lake_Fog : MonoBehaviour
 
                 if(count == 4)
                 {
-                    
-                    particle.Play();
 
+                    R1.Play();
+                    R2.Play();
+                    R3.Play();
 
                 }
             }
