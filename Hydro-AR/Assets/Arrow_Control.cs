@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Arrow_Control : MonoBehaviour
 {
-    Animator animator;
+    public Animator animatorS;
+    public Animator animatorE;
+    int count = 0;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
         
+        //gameObject.SetActive(false);
+
     }
 
     void DisableObject()
@@ -18,13 +21,26 @@ public class Arrow_Control : MonoBehaviour
         
     }
 
+    void EnableObject()
+    {
+        gameObject.SetActive(true);
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            gameObject.SetActive(true);
-            animator.SetTrigger("Arrow_Sun");
+            count++;
+            if(count == 1)
+            {
+                animatorS.SetTrigger("Arrow_Sun");
+            }
+            
+            if(count == 2)
+            {
+                animatorE.SetTrigger("Arrow_Evaporation");
+            }
         }
     }
 }

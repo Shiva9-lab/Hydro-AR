@@ -327,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19550360}
   - component: {fileID: 19550361}
+  - component: {fileID: 19550362}
   m_Layer: 0
   m_Name: arrow_evaporation
   m_TagString: Untagged
@@ -373,6 +374,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &19550362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19550358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19849afa005bc5449a58d05162be142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &21600823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1580,52 @@ Transform:
   m_Father: {fileID: 124984220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &374924387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 374924389}
+  - component: {fileID: 374924388}
+  m_Layer: 0
+  m_Name: Arrow_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &374924388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374924387}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a38ae3e1486694292a2f70ef74fa63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorS: {fileID: 1696074391}
+  animatorE: {fileID: 19550361}
+--- !u!4 &374924389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374924387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 193.16878, y: 18.201422, z: -56.688725}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377682439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,7 +2697,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 688056725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0624d4dd02f444e800ae5543b651a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 660d02783a95a354f92965fd0eb8396f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator_LF: {fileID: 5267975175247159176}
@@ -2646,6 +2705,9 @@ MonoBehaviour:
   animator_C1: {fileID: 5267975175760582577}
   animator_C2: {fileID: 5267975175144729118}
   animator_C3: {fileID: 5267975174992850132}
+  animator_AS: {fileID: 0}
+  animator_AE: {fileID: 0}
+  animator_AC: {fileID: 0}
   R1: {fileID: 1660901728}
   R2: {fileID: 472268044}
   R3: {fileID: 1982578674}
@@ -11115,7 +11177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1696074390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8a38ae3e1486694292a2f70ef74fa63, type: 3}
+  m_Script: {fileID: 11500000, guid: 324e7ddcc53758247a691645bfcdbb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1717491721
